@@ -19,6 +19,8 @@ import gc
 import gzip
 from app.core.state import pdf_storage, pdf_task_status
 
+from PyPDF2 import PdfReader
+from io import BytesIO
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO)
